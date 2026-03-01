@@ -131,16 +131,14 @@ export function Header() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between gap-4 px-4 md:px-6">
           {/* Left: hamburger + logo */}
-          <div className="flex items-center gap-2">
-            <Button
-              variant="ghost"
-              size="icon"
+          <div className="flex items-center gap-3">
+            <button
               aria-label="Abrir menú"
-              className="md:hidden"
               onClick={() => setMobileOpen(true)}
+              className="p-1.5 -ml-1.5 text-foreground hover:text-foreground/70 transition-colors"
             >
-              <Menu className="h-5 w-5" />
-            </Button>
+              <Menu className="h-5 w-5" strokeWidth={1.5} />
+            </button>
             <Link href="/" className="font-bold text-xl tracking-tight">
               LADELGORILA
             </Link>
