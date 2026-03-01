@@ -50,7 +50,7 @@ export function Header() {
             <SheetContent
               side="left"
               overlayClassName="glass-scrim"
-              className="glass w-full max-w-[320px] border-r border-white/10 p-0 gap-0"
+              className="glass bg-transparent w-full max-w-[320px] border-r border-white/10 p-0 gap-0"
             >
               <SheetTitle className="sr-only">Menú de navegación</SheetTitle>
               <div className="flex flex-col h-full overflow-y-auto scrollbar-hide">
