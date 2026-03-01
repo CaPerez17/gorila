@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -28,7 +28,6 @@ interface QuickViewDrawerProps {
   product: Product | null;
   open: boolean;
   onOpenChange: (open: boolean) => void;
-  /** Optional editorial microcopy (e.g. "Edición limitada", "Hecho para entrenar") */
   editorialLine?: string;
 }
 
@@ -52,7 +51,9 @@ export function QuickViewDrawer({
   editorialLine,
 }: QuickViewDrawerProps) {
   const side = useSheetSide();
-  const v0 = product?.variants[0];
+  const variants = product?.variants ?? [];
+  const v0 = variants[0];
+
   const [selectedColor, setSelectedColor] = useState<string | null>(
     v0?.color ?? null
   );
@@ -60,46 +61,53 @@ export function QuickViewDrawer({
     v0?.size ?? null
   );
 
-  // Reset selection when product changes
   useEffect(() => {
-    const v = product?.variants[0];
+    if (!product) return;
+    const v = product.variants[0];
     setSelectedColor(v?.color ?? null);
     setSelectedSize(v?.size ?? null);
-  }, [product?.id]);
+  }, [product]);
 
-  if (!product) return null;
-
-  const hasColors = product.variants.some((v) => v.color);
-  const hasSizes = product.variants.some((v) => v.size);
+  const hasColors = variants.some((v) => v.color);
+  const hasSizes = variants.some((v) => v.size);
 
   const selectedVariant = useMemo(() => {
-    let filtered = product.variants;
+    if (variants.length === 0) return {} as ProductVariant;
+    let filtered = variants;
     if (selectedColor)
       filtered = filtered.filter((v) => v.color === selectedColor);
-    if (selectedSize) filtered = filtered.filter((v) => v.size === selectedSize);
-    return filtered[0] ?? product.variants[0] ?? ({} as ProductVariant);
-  }, [product.variants, selectedColor, selectedSize]);
+    if (selectedSize)
+      filtered = filtered.filter((v) => v.size === selectedSize);
+    return filtered[0] ?? variants[0] ?? ({} as ProductVariant);
+  }, [variants, selectedColor, selectedSize]);
 
-  const handleColorSelect = (v: ProductVariant) => {
-    setSelectedColor(v.color ?? null);
-    const byColor = product.variants.filter((x) => x.color === v.color);
-    if (hasSizes && byColor[0]?.size) setSelectedSize(byColor[0].size);
-  };
-  const handleSizeSelect = (v: ProductVariant) => {
+  const handleColorSelect = useCallback(
+    (v: ProductVariant) => {
+      setSelectedColor(v.color ?? null);
+      const byColor = variants.filter((x) => x.color === v.color);
+      if (hasSizes && byColor[0]?.size) setSelectedSize(byColor[0].size);
+    },
+    [variants, hasSizes]
+  );
+
+  const handleSizeSelect = useCallback((v: ProductVariant) => {
     setSelectedSize(v.size ?? null);
-  };
+  }, []);
+
+  if (!product) return null;
 
   const imageSrc =
     selectedVariant.imageUrl?.startsWith("/") ||
     selectedVariant.imageUrl?.startsWith("http")
       ? selectedVariant.imageUrl
-      : product.images[0]?.startsWith("/") || product.images[0]?.startsWith("http")
+      : product.images[0]?.startsWith("/") ||
+          product.images[0]?.startsWith("http")
         ? product.images[0]
         : PLACEHOLDER_IMAGE;
 
   const colorFilteredVariants = selectedColor
-    ? product.variants.filter((v) => v.color === selectedColor)
-    : product.variants;
+    ? variants.filter((v) => v.color === selectedColor)
+    : variants;
   const available = isVariantAvailable(selectedVariant);
 
   const whatsAppCtaLabel =

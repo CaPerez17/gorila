@@ -25,8 +25,6 @@ interface PDPClientProps {
 
 export function PDPClient({
   product,
-  category,
-  categoryLabel,
 }: PDPClientProps) {
   const v0 = product.variants[0];
   const [selectedColor, setSelectedColor] = useState<string | null>(

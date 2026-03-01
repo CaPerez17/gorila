@@ -5,7 +5,6 @@ import Image from "next/image";
 import type { Product } from "@/types";
 import { PLACEHOLDER_IMAGE } from "@/lib/constants";
 import { formatPriceCOP } from "@/lib/format";
-import { cn } from "@/lib/utils";
 
 const CATEGORY_LABELS: Record<string, string> = {
   women: "MUJERES",
