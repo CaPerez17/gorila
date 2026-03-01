@@ -1,0 +1,38 @@
+[
+  {
+    "id": "col-god-is-first",
+    "slug": "god-is-first",
+    "name": "God Is First",
+    "description": "The founding collection. Where it began. Discipline, loyalty, and street made — from Córdoba, Colombia.",
+    "productIds": ["prod-001", "prod-002", "prod-003", "prod-004", "prod-005"],
+    "imageUrl": "/placeholders/collection.svg",
+    "type": "collection"
+  },
+  {
+    "id": "col-new",
+    "slug": "new-arrivals",
+    "name": "New Arrivals",
+    "description": "Fresh drops. Latest pieces for your grind.",
+    "productIds": ["prod-001", "prod-002", "prod-003", "prod-004", "prod-005", "prod-010"],
+    "imageUrl": "/placeholders/collection.svg",
+    "type": "drop"
+  },
+  {
+    "id": "col-bestsellers",
+    "slug": "best-sellers",
+    "name": "Best Sellers",
+    "description": "Community favorites. What moves the most.",
+    "productIds": ["prod-003", "prod-004", "prod-005", "prod-007", "prod-008"],
+    "imageUrl": "/placeholders/collection.svg",
+    "type": "drop"
+  },
+  {
+    "id": "col-essentials",
+    "slug": "essentials",
+    "name": "Essentials",
+    "description": "Built for the session. Performance-first pieces.",
+    "productIds": ["prod-001", "prod-002", "prod-006", "prod-009"],
+    "imageUrl": "/placeholders/collection.svg",
+    "type": "drop"
+  }
+]

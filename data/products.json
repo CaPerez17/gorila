@@ -1,0 +1,153 @@
+[
+  {
+    "id": "prod-001",
+    "slug": "bodysuit-sleeveless-black",
+    "name": "Bodysuit Sleeveless",
+    "description": "High-performance sleeveless bodysuit for training. Breathable fabric, perfect fit.",
+    "category": "women",
+    "productType": "Bodysuit Sleeveless",
+    "variants": [
+      { "id": "var-001", "sku": "BSS-BLK-S", "color": "Black", "size": "S", "price": 12900, "stock": 10 },
+      { "id": "var-002", "sku": "BSS-BLK-M", "color": "Black", "size": "M", "price": 12900, "stock": 8 },
+      { "id": "var-003", "sku": "BSS-BLK-L", "color": "Black", "size": "L", "price": 12900, "stock": 5 }
+    ],
+    "images": ["/placeholders/product.svg"],
+    "collectionIds": ["col-new", "col-essentials"],
+    "createdAt": "2025-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-002",
+    "slug": "bodysuit-long-sleeve-navy",
+    "name": "Bodysuit Long Sleeve",
+    "description": "Long sleeve bodysuit for cooler sessions. Compression fit, moisture-wicking.",
+    "category": "women",
+    "productType": "Bodysuit Long Sleeve",
+    "variants": [
+      { "id": "var-004", "sku": "BLS-NAV-S", "color": "Navy", "size": "S", "price": 14900, "stock": 7 },
+      { "id": "var-005", "sku": "BLS-NAV-M", "color": "Navy", "size": "M", "price": 14900, "stock": 12 }
+    ],
+    "images": ["/placeholders/product.svg"],
+    "collectionIds": ["col-new", "col-essentials"],
+    "createdAt": "2025-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-003",
+    "slug": "t-shirt-women-black",
+    "name": "Essential T-Shirt",
+    "description": "Classic cotton tee with LADELGORILA branding. Unisex fit.",
+    "category": "women",
+    "productType": "T-Shirt",
+    "variants": [
+      { "id": "var-006", "sku": "TSH-W-BLK-S", "color": "Black", "size": "S", "price": 5900, "stock": 15 },
+      { "id": "var-007", "sku": "TSH-W-BLK-M", "color": "Black", "size": "M", "price": 5900, "stock": 20 },
+      { "id": "var-008", "sku": "TSH-W-BLK-L", "color": "Black", "size": "L", "price": 5900, "stock": 10 }
+    ],
+    "images": ["/placeholders/product.svg"],
+    "collectionIds": ["col-new", "col-bestsellers"],
+    "createdAt": "2025-01-10T00:00:00Z"
+  },
+  {
+    "id": "prod-004",
+    "slug": "t-shirt-men-black",
+    "name": "Essential T-Shirt",
+    "description": "Classic cotton tee with LADELGORILA branding. Street-ready fit.",
+    "category": "men",
+    "productType": "T-Shirt",
+    "variants": [
+      { "id": "var-009", "sku": "TSH-M-BLK-S", "color": "Black", "size": "S", "price": 5900, "stock": 18 },
+      { "id": "var-010", "sku": "TSH-M-BLK-M", "color": "Black", "size": "M", "price": 5900, "stock": 25 },
+      { "id": "var-011", "sku": "TSH-M-BLK-L", "color": "Black", "size": "L", "price": 5900, "stock": 12 },
+      { "id": "var-012", "sku": "TSH-M-WHT-M", "color": "White", "size": "M", "price": 5900, "stock": 14 }
+    ],
+    "images": ["/placeholders/product.svg"],
+    "collectionIds": ["col-new", "col-bestsellers"],
+    "createdAt": "2025-01-10T00:00:00Z"
+  },
+  {
+    "id": "prod-005",
+    "slug": "flexfit-cap-black",
+    "name": "Flexfit Cap",
+    "description": "Structured cap with Flexfit technology. Adjustable, premium fit.",
+    "category": "headwear",
+    "productType": "Flexfit Cap",
+    "variants": [
+      { "id": "var-013", "sku": "FF-BLK-OS", "color": "Black", "size": "One Size", "price": 8900, "stock": 30 },
+      { "id": "var-014", "sku": "FF-NAV-OS", "color": "Navy", "size": "One Size", "price": 8900, "stock": 22 }
+    ],
+    "images": ["/placeholders/product.svg"],
+    "collectionIds": ["col-new", "col-bestsellers"],
+    "createdAt": "2025-01-12T00:00:00Z"
+  },
+  {
+    "id": "prod-006",
+    "slug": "suede-cap-olive",
+    "name": "Suede Cap",
+    "description": "Premium suede cap. Soft finish, timeless style.",
+    "category": "headwear",
+    "productType": "Suede Cap",
+    "variants": [
+      { "id": "var-015", "sku": "SUED-OLV-OS", "color": "Olive", "size": "One Size", "price": 11900, "stock": 15 }
+    ],
+    "images": ["/placeholders/product.svg"],
+    "collectionIds": ["col-essentials"],
+    "createdAt": "2025-01-14T00:00:00Z"
+  },
+  {
+    "id": "prod-007",
+    "slug": "richardson-cap-black",
+    "name": "Richardson Cap",
+    "description": "Classic Richardson-style cap. Durable, street-approved.",
+    "category": "headwear",
+    "productType": "Richardson Cap",
+    "variants": [
+      { "id": "var-016", "sku": "RCH-BLK-OS", "color": "Black", "size": "One Size", "price": 9900, "stock": 20 }
+    ],
+    "images": ["/placeholders/product.svg"],
+    "collectionIds": ["col-bestsellers"],
+    "createdAt": "2025-01-08T00:00:00Z"
+  },
+  {
+    "id": "prod-008",
+    "slug": "t-shirt-men-white",
+    "name": "Essential T-Shirt White",
+    "description": "Clean white cotton tee. Minimal branding.",
+    "category": "men",
+    "productType": "T-Shirt",
+    "variants": [
+      { "id": "var-017", "sku": "TSH-M-WHT-S", "color": "White", "size": "S", "price": 5900, "stock": 10 },
+      { "id": "var-018", "sku": "TSH-M-WHT-L", "color": "White", "size": "L", "price": 5900, "stock": 8 }
+    ],
+    "images": ["/placeholders/product.svg"],
+    "collectionIds": ["col-bestsellers"],
+    "createdAt": "2025-01-09T00:00:00Z"
+  },
+  {
+    "id": "prod-009",
+    "slug": "bodysuit-sleeveless-navy",
+    "name": "Bodysuit Sleeveless Navy",
+    "description": "Sleeveless bodysuit in navy. Gym-ready.",
+    "category": "women",
+    "productType": "Bodysuit Sleeveless",
+    "variants": [
+      { "id": "var-019", "sku": "BSS-NAV-S", "color": "Navy", "size": "S", "price": 12900, "stock": 6 },
+      { "id": "var-020", "sku": "BSS-NAV-M", "color": "Navy", "size": "M", "price": 12900, "stock": 9 }
+    ],
+    "images": ["/placeholders/product.svg"],
+    "collectionIds": ["col-essentials"],
+    "createdAt": "2025-01-16T00:00:00Z"
+  },
+  {
+    "id": "prod-010",
+    "slug": "flexfit-cap-olive",
+    "name": "Flexfit Cap Olive",
+    "description": "Flexfit cap in olive. Versatile everyday wear.",
+    "category": "headwear",
+    "productType": "Flexfit Cap",
+    "variants": [
+      { "id": "var-021", "sku": "FF-OLV-OS", "color": "Olive", "size": "One Size", "price": 8900, "stock": 18 }
+    ],
+    "images": ["/placeholders/product.svg"],
+    "collectionIds": ["col-new"],
+    "createdAt": "2025-01-18T00:00:00Z"
+  }
+]

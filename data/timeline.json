@@ -1,0 +1,29 @@
+[
+  {
+    "id": "evt-001",
+    "year": "2023",
+    "title": "Origin",
+    "titleEs": "Origen",
+    "description": "LADELGORILA started in Córdoba, Colombia. A small crew, a big idea: streetwear that honors discipline and loyalty.",
+    "descriptionEs": "LADELGORILA nació en Córdoba, Colombia. Un equipo pequeño, una idea grande.",
+    "imageUrl": "/placeholders/collection.svg"
+  },
+  {
+    "id": "evt-002",
+    "year": "2024",
+    "title": "First Drop",
+    "titleEs": "Primer lanzamiento",
+    "description": "First collection launched. Bodysuits and tees. The community responded.",
+    "descriptionEs": "Primera colección. Bodysuits y camisetas. La comunidad respondió.",
+    "imageUrl": "/placeholders/collection.svg"
+  },
+  {
+    "id": "evt-003",
+    "year": "2025",
+    "title": "Expansion",
+    "titleEs": "Expansión",
+    "description": "Headwear line. New categories. From Córdoba to the world.",
+    "descriptionEs": "Línea de gorras. Nuevas categorías. De Córdoba al mundo.",
+    "imageUrl": "/placeholders/collection.svg"
+  }
+]
